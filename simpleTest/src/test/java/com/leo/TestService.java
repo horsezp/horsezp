@@ -14,5 +14,12 @@ public class TestService {
 		
 		Assert.assertEquals(a, 5);
 	}
-
+	@Test
+	public void test2() {
+		Service service = new Service();
+		
+		int a = service.sum(2, -2);
+		
+		Assert.assertEquals(a, 0);
+	}
 }
